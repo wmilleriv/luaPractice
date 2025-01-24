@@ -15,6 +15,10 @@ function sub(num1, num2)
     return num1-num2
 end
 
+function mult(num1, num2)
+    return num1*num2
+end
+
 function getInput(valTypeString)
     print("Enter a " ..  valTypeString .. ":")
     return io.read()
