@@ -1,4 +1,3 @@
---TODO: call getInput for the operand and num2
 --TODO: Add a branching conditional to choose the right operator function
 --TODO: Call the functions to print the result
 --TODO: Add Error checking to make sure the inputs are numbers and operands
@@ -19,7 +18,7 @@ function mult(num1, num2)
 end
 
 function div(num1, num2)
-    retutn num1/num2
+    return num1/num2
 end
 
 function getInput(valTypeString)
@@ -28,6 +27,8 @@ function getInput(valTypeString)
 end
 
 --get the value for num1 from the user
-getInput("number")
-
+x=getInput("number")
+op=getInput("operaor")
+y=getInput("number")
+print(x .. "+" .. y .."=" .. add(x,y))
 
