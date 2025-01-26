@@ -28,7 +28,20 @@ end
 
 --get the value for num1 from the user
 x=getInput("number")
-op=getInput("operaor")
-y=getInput("number")
-print(x .. "+" .. y .."=" .. add(x,y))
+op=getInput("operator")
+y=getInput("number")    
+
+if op=="+" then
+    ans=add(x,y)
+elseif op=="-" then 
+    ans=sub(x,y)
+elseif op=="*" then
+    ans=mult(x,y)
+elseif op=="/" then
+    ans=div(x,y)
+else
+    ans="ERROR: Not a known operator"
+end
+print(x .. op  .. y .."=" .. ans)
+
 
