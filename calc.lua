@@ -19,6 +19,10 @@ function mult(num1, num2)
     return num1*num2
 end
 
+function div(num1, num2)
+    retutn num1/num2
+end
+
 function getInput(valTypeString)
     print("Enter a " ..  valTypeString .. ":")
     return io.read()
