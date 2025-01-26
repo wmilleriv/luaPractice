@@ -1,4 +1,3 @@
---TODO: Add functions for multiplication and division
 --TODO: call getInput for the operand and num2
 --TODO: Add a branching conditional to choose the right operator function
 --TODO: Call the functions to print the result
