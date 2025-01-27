@@ -1,4 +1,3 @@
---TODO: Add a branching conditional to choose the right operator function
 --TODO: Call the functions to print the result
 --TODO: Add Error checking to make sure the inputs are numbers and operands
 
