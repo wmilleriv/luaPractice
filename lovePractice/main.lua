@@ -205,3 +205,13 @@ function love.draw()
         end
     end
 end
+
+function love.keypressed(key)
+    if key == 'x' then
+        pieceRotation = pieceRotation + 1
+        if pieceRotation > #pieceStructures[pieceType] then
+            pieceRotation = 1
+        end
+    end
+end
+
