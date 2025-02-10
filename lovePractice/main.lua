@@ -3,6 +3,8 @@ function love.load()
 
     gridXCount = 10
     gridYCount = 18
+    pieceX=3
+    pieceY=0
 
     inert = {}
     for y = 1, gridYCount do
