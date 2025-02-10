@@ -206,6 +206,14 @@ function love.draw()
             end
         end
     end
+    for y=1, 4 do
+        for x=1, 4 do
+            local block= pieceStructures[pieceType][pieceRotation][y][x]
+            if block ~= ' ' then
+                drawBlock(block, x+pieceX, y+pieceY)
+        end
+    end
+
 end
 
 function love.keypressed(key)
