@@ -147,6 +147,7 @@ function love.load()
     pieceRotation = 1
     pieceX = 3
     pieceY = 0
+    timer = 0
 end
 
 function love.keypressed(key)
@@ -223,5 +224,12 @@ function love.draw()
                 drawBlock(block, x + pieceX, y + pieceY)
             end
         end
+    end
+end
+function love.update(dt)
+    timer = timer + dt
+    if timer >= 0.5 then
+        timer = 0
+        print('tick')
     end
 end
