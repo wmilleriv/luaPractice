@@ -161,6 +161,10 @@ function love.keypressed(key)
         if pieceRotation < 1 then
             pieceRotation = #pieceStructures[pieceType]
         end
+    elseif key == 'left' then
+        pieceX=pieceX-1
+    elseif key == 'right' then
+        pieceX=pieceX+1
 
     -- Temporary
     elseif key == 'down' then
