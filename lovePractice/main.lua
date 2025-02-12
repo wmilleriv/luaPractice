@@ -230,6 +230,7 @@ function love.update(dt)
     timer = timer + dt
     if timer >= 0.5 then
         timer = 0
+        pieceY=pieceY+1
         print('tick')
     end
 end
